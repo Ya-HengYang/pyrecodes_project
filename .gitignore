@@ -1,0 +1,47 @@
+# -------------------------------
+# Python
+# -------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# Logs
+*.log
+*.out
+*.err
+
+# -------------------------------
+# HPC / Slurm
+# -------------------------------
+slurm-*.out
+slurm-*.err
+*.e*
+*.o*
+
+# Temporary files from editors
+*~
+*.swp
+*.swo
+.DS_Store
+
+# -------------------------------
+# Project-specific
+# -------------------------------
+
+# Simulation outputs
+output_dir/
+
+# Scratch directory
+/cluster/scratch/
+
