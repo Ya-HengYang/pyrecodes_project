@@ -1,0 +1,245 @@
+{
+    "crs": {
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        },
+        "type": "name"
+    },
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -122.261253,
+                    37.76415
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "AIM_id": "0",
+                "BridgeClass": 201,
+                "BridgeHazusClass": "HWB10",
+                "DeckWidth": 905.511811023622,
+                "FacilityCarried": "GRAND ST",
+                "MaxSpanLength": 358.26771653543307,
+                "NumOfSpans": 3,
+                "R2Dres_MostLikelyCriticalDamageState": 0,
+                "R2Dres_mean_RepairCost_loss_ratio": 0.47619999999999996,
+                "R2Dres_mean_RepairTime_day": 143.85,
+                "R2Dres_std_RepairCost_loss_ratio": 0.4981881920996068,
+                "R2Dres_std_RepairTime_day": 160.62512822775213,
+                "ReplacementCost": 196745616.61417323,
+                "RoadID": "3131,3142",
+                "Skew": 0,
+                "SoilType": "B",
+                "StateCode": "06",
+                "StructureLength": 744.0945,
+                "StructureNumber": "33C0229",
+                "YearBuilt": 1958,
+                "assetSubtype": "HwyBridge",
+                "assetType": "TransportationNetwork",
+                "location": {
+                    "latitude": 37.76415,
+                    "longitude": -122.261253
+                },
+                "type": "Bridge"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -122.286108,
+                    37.76965
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "AIM_id": "1",
+                "BridgeClass": 502,
+                "BridgeHazusClass": "HWB17",
+                "DeckWidth": 708.6614173228347,
+                "FacilityCarried": "BALLENA BLVD",
+                "MaxSpanLength": 732.2834645669292,
+                "NumOfSpans": 3,
+                "R2Dres_MostLikelyCriticalDamageState": 3,
+                "R2Dres_mean_RepairCost_loss_ratio": 0.5448,
+                "R2Dres_mean_RepairTime_day": 147.1,
+                "R2Dres_std_RepairCost_loss_ratio": 0.47343251201659514,
+                "R2Dres_std_RepairTime_day": 153.74283263247946,
+                "ReplacementCost": 487475226.1417324,
+                "RoadID": "3180,3181",
+                "Skew": 0,
+                "SoilType": "B",
+                "StateCode": "06",
+                "StructureLength": 1728.346,
+                "StructureNumber": "33C0230",
+                "YearBuilt": 1966,
+                "assetSubtype": "HwyBridge",
+                "assetType": "TransportationNetwork",
+                "location": {
+                    "latitude": 37.76965,
+                    "longitude": -122.286108
+                },
+                "type": "Bridge"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -122.236186,
+                    37.772117
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "AIM_id": "2",
+                "BridgeClass": 316,
+                "BridgeHazusClass": "HWB28",
+                "DeckWidth": 574.8031496062993,
+                "FacilityCarried": "PARK ST",
+                "MaxSpanLength": 3456.6929133858266,
+                "NumOfSpans": 3,
+                "R2Dres_MostLikelyCriticalDamageState": 0,
+                "R2Dres_mean_RepairCost_loss_ratio": 0.3948,
+                "R2Dres_mean_RepairTime_day": 103.1,
+                "R2Dres_std_RepairCost_loss_ratio": 0.4860030344503514,
+                "R2Dres_std_RepairTime_day": 136.41103216737895,
+                "ReplacementCost": 949918707.8740159,
+                "RoadID": "83,84",
+                "Skew": 0,
+                "SoilType": "B",
+                "StateCode": "06",
+                "StructureLength": 5196.85,
+                "StructureNumber": "33C0027",
+                "YearBuilt": 1934,
+                "assetSubtype": "HwyBridge",
+                "assetType": "TransportationNetwork",
+                "location": {
+                    "latitude": 37.772117,
+                    "longitude": -122.236186
+                },
+                "type": "Bridge"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -122.224492,
+                    37.764986
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "AIM_id": "3",
+                "BridgeClass": 316,
+                "BridgeHazusClass": "HWB28",
+                "DeckWidth": 311.02362204724415,
+                "FacilityCarried": "HIGH ST",
+                "MaxSpanLength": 3551.181102362205,
+                "NumOfSpans": 3,
+                "R2Dres_MostLikelyCriticalDamageState": 4,
+                "R2Dres_mean_RepairCost_loss_ratio": 0.7160000000000001,
+                "R2Dres_mean_RepairTime_day": 229.8,
+                "R2Dres_std_RepairCost_loss_ratio": 0.4488188764283248,
+                "R2Dres_std_RepairTime_day": 157.21361649717628,
+                "ReplacementCost": 599663129.0551182,
+                "RoadID": "2621,2639,2796,2799",
+                "Skew": 0,
+                "SoilType": "A",
+                "StateCode": "06",
+                "StructureLength": 6062.99,
+                "StructureNumber": "33C0026",
+                "YearBuilt": 1939,
+                "assetSubtype": "HwyBridge",
+                "assetType": "TransportationNetwork",
+                "location": {
+                    "latitude": 37.764986,
+                    "longitude": -122.224492
+                },
+                "type": "Bridge"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -122.230008,
+                    37.769219
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "AIM_id": "4",
+                "BridgeClass": 316,
+                "BridgeHazusClass": "HWB3",
+                "DeckWidth": 771.6535433070867,
+                "FacilityCarried": "FRUITVALE AVE",
+                "MaxSpanLength": 1535.4330708661419,
+                "NumOfSpans": 1,
+                "R2Dres_MostLikelyCriticalDamageState": 0,
+                "R2Dres_mean_RepairCost_loss_ratio": 0.3356,
+                "R2Dres_mean_RepairTime_day": 87.8,
+                "R2Dres_std_RepairCost_loss_ratio": 0.4699673747541773,
+                "R2Dres_std_RepairTime_day": 131.34179329774156,
+                "ReplacementCost": 1550889956.2204728,
+                "RoadID": "830,2977",
+                "Skew": 3,
+                "SoilType": "B",
+                "StateCode": "06",
+                "StructureLength": 4740.1575,
+                "StructureNumber": "33C0147",
+                "YearBuilt": 1974,
+                "assetSubtype": "HwyBridge",
+                "assetType": "TransportationNetwork",
+                "location": {
+                    "latitude": 37.769219,
+                    "longitude": -122.230008
+                },
+                "type": "Bridge"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -122.236228,
+                    37.748086
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "AIM_id": "5",
+                "BridgeClass": 316,
+                "BridgeHazusClass": "HWB3",
+                "DeckWidth": 783.4645669291339,
+                "FacilityCarried": "STATE ROUTE 61",
+                "MaxSpanLength": 1255.9055118110236,
+                "NumOfSpans": 1,
+                "R2Dres_MostLikelyCriticalDamageState": 4,
+                "R2Dres_mean_RepairCost_loss_ratio": 0.8164000000000001,
+                "R2Dres_mean_RepairTime_day": 269.6,
+                "R2Dres_std_RepairCost_loss_ratio": 0.384501566375814,
+                "R2Dres_std_RepairTime_day": 141.34934157482434,
+                "ReplacementCost": 3838482820.3464565,
+                "RoadID": "1826,1827,1828,1829,3873,3874,3875,3939,3940,3941,3942,3987,3988,3989",
+                "Skew": 0,
+                "SoilType": "A",
+                "StateCode": "06",
+                "StructureLength": 11555.118,
+                "StructureNumber": "33 0086",
+                "YearBuilt": 1953,
+                "assetSubtype": "HwyBridge",
+                "assetType": "TransportationNetwork",
+                "location": {
+                    "latitude": 37.748086,
+                    "longitude": -122.236228
+                },
+                "type": "Bridge"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}

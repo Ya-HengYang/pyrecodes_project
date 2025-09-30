@@ -1,0 +1,5 @@
+Plotter
+=======
+
+.. automodule:: pyrecodes.plotter
+   :members:

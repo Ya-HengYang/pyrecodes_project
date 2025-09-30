@@ -1,0 +1,105 @@
+# Prerequisites
+*.d
+
+# old text editor files
+*~
+
+# Qt created files
+moc*
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.pyc
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+# *.dylib
+*.dll
+!epanet22_mod.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# QT
+*.pro.user
+qcustomplot.h
+qcustomplot.cpp
+*.stash
+qrc_images.cpp
+qrc_images1.cpp
+qrc_styles.cpp
+
+# PyCharm
+.idea
+
+# OTHER
+applications
+build
+# Makefile
+# Makefile.*
+StandardGMT_EDP
+StandardWindEDP
+UserDefinedEDP
+SiteResponse
+MDOF_BuildingModel
+ExtractPGA
+StandardEarthquakeEDP
+OpenSeesInput
+OpenSeesPostprocessor
+OpenSeesPreprocessor
+extractEDP
+MultipleSimCenterEvents
+MultiplePEER_Events
+postprocessDAKOTA
+*.pyc
+*.bak
+*.autosave
+debug.log
+MDOF_BuildingModelToSAM
+#EVENT.json*
+#dakota.json
+#testFile.json
+#testInput.json
+#evt.json
+#SAM.json
+#edp.json
+#input.json
+applications.tar
+DEDM_HRP
+LowRiseTPU
+WindTunnelExperiment
+preprocessDakota
+simCenterDprepro
+simCenterSub
+.DS_Store
+fmkTest.sh
+
+#Remove .vscode
+.vscode
+
+.coverage
+modules/performREC/pyrecodes/pyrecodes*
+modules/performREC/pyrecodes/residual_demand_traffic_simulator/projects*
+
+applications.*
+modules/performREC/pyrecodes/pyrecodes/*
+

@@ -1,0 +1,323 @@
+{
+    "Constants": {
+        "START_TIME_STEP": 0,
+        "MAX_TIME_STEP": 3650,
+        "DISASTER_TIME_STEP": 1,
+        "MAX_REPAIR_CREW_DEMAND_PER_BUILDING": 50,
+        "HOUSING_RESOURCES": [
+            "Shelter"
+        ],
+        "REPAIR_CREW_DEMAND_PER_SQFT": {
+            "DS1": 5400,
+            "DS2": 5400,
+            "DS3": 2700,
+            "DS4": 2700
+        },
+        "DEFAULT_REPAIR_DURATION_DICT": {
+            "Lognormal": {
+                "Median": 0,
+                "Dispersion": 0.3
+            }
+        }
+    },
+    "Content": {               
+        "Locality 1": {
+            "Coordinates": {
+                "BoundingBox":   
+                    [[-122.43, 37.78], [-122.38, 37.78], [-122.38, 37.82], [-122.43, 37.82]] 
+            },
+            "Components": {
+                "RecoveryResourceSuppliers": [
+                    {
+                        "EmergencyResponseCenter": {
+                            "CreatorClassName": "RecoveryResourceSuppliersCreator",
+                            "CreatorFileName": "recovery_resource_suppliers_creator",
+                            "Parameters": {
+                                "ComponentName": [
+                                    "EmergencyResponseCenter"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "BuildingStock": [
+                    {
+                        "Buildings": {
+                            "CreatorClassName": "R2DSubsystemCreator",
+                            "CreatorFileName": "r2d_subsystem_creator",
+                            "Parameters": {
+                                "Resource": [
+                                    "Shelter"
+                                ],
+                                "R2DJSONFile_Info": "./Example 3/NorthEast_SF_Housing_Exposure.json",
+                                "SubsystemNameInR2DJSON": "Buildings",
+                                "AssetTypes": [
+                                    "Building"
+                                ],
+                                "MaxNumComponents": 10000,
+                                "RecoveryTimeStepping": [
+                                    {
+                                        "start": 0,
+                                        "end": 100,
+                                        "step": 1
+                                    },
+                                    {
+                                        "start": 100,
+                                        "end": 1000,
+                                        "step": 10
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "DamageInput": {
+        "FileName": "r2d_damage_input",
+        "ClassName": "R2DDamageInput",
+        "Parameters": {
+            "DamageFile": "./Example 3/NorthEast_SF_Housing_Damage.json"
+        }
+    },
+    "Resources": {
+        "Shelter": {
+            "Group": "Utilities",
+            "DistributionModel": {
+                "ClassName": "HousingDistributionModel",
+                "FileName": "housing_distribution_model",
+                "Parameters": {
+                    "DistributionTimeStepping": [
+                        {
+                            "start": 0,
+                            "end": 50,
+                            "step": 1
+                        },
+                        {
+                            "start": 50,
+                            "end": 1000,
+                            "step": 50
+                        }
+                    ]
+                }
+            }
+        },
+        "FirstResponderEngineer": {
+            "Group": "RecoveryResources",
+            "DistributionModel": {
+                "ClassName": "UtilityDistributionModel",
+                "FileName": "utility_distribution_model",
+                "Parameters": {
+                    "DistributionPriority": {
+                        "FileName": "random_priority",
+                        "ClassName": "RandomPriority",
+                        "Parameters": {
+                            "Seed": 42.0,
+                            "DemandType": [
+                                "RecoveryDemand"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "SeniorEngineer": {
+            "Group": "RecoveryResources",
+            "DistributionModel": {
+                "ClassName": "UtilityDistributionModel",
+                "FileName": "utility_distribution_model",
+                "Parameters": {
+                    "DistributionPriority": {
+                        "FileName": "random_priority",
+                        "ClassName": "RandomPriority",
+                        "Parameters": {
+                            "Seed": 42.0,
+                            "DemandType": [
+                                "RecoveryDemand"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "Contractor": {
+            "Group": "RecoveryResources",
+            "DistributionModel": {
+                "ClassName": "UtilityDistributionModel",
+                "FileName": "utility_distribution_model",
+                "Parameters": {
+                    "DistributionPriority": {
+                        "FileName": "random_priority",
+                        "ClassName": "RandomPriority",
+                        "Parameters": {
+                            "Seed": 42.0,
+                            "DemandType": [
+                                "RecoveryDemand"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "Money": {
+            "Group": "RecoveryResources",
+            "DistributionModel": {
+                "ClassName": "UtilityDistributionModel",
+                "FileName": "utility_distribution_model",
+                "Parameters": {
+                    "DistributionPriority": {
+                        "FileName": "random_priority",
+                        "ClassName": "RandomPriority",
+                        "Parameters": {
+                            "Seed": 42.0,
+                            "DemandType": [
+                                "RecoveryDemand"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "PlanCheckEngineeringTeam": {
+            "Group": "RecoveryResources",
+            "DistributionModel": {
+                "ClassName": "UtilityDistributionModel",
+                "FileName": "utility_distribution_model",
+                "Parameters": {
+                    "DistributionPriority": {
+                        "FileName": "random_priority",
+                        "ClassName": "RandomPriority",
+                        "Parameters": {
+                            "Seed": 42.0,
+                            "DemandType": [
+                                "RecoveryDemand"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "SitePreparationCrew": {
+            "Group": "RecoveryResources",
+            "DistributionModel": {
+                "ClassName": "UtilityDistributionModel",
+                "FileName": "utility_distribution_model",
+                "Parameters": {
+                    "DistributionPriority": {
+                        "FileName": "random_priority",
+                        "ClassName": "RandomPriority",
+                        "Parameters": {
+                            "Seed": 42.0,
+                            "DemandType": [
+                                "RecoveryDemand"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "CleanUpCrew": {
+            "Group": "RecoveryResources",
+            "DistributionModel": {
+                "ClassName": "UtilityDistributionModel",
+                "FileName": "utility_distribution_model",
+                "Parameters": {
+                    "DistributionPriority": {
+                        "FileName": "random_priority",
+                        "ClassName": "RandomPriority",
+                        "Parameters": {
+                            "Seed": 42.0,
+                            "DemandType": [
+                                "RecoveryDemand"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "EngineeringDesignTeam": {
+            "Group": "RecoveryResources",
+            "DistributionModel": {
+                "ClassName": "UtilityDistributionModel",
+                "FileName": "utility_distribution_model",
+                "Parameters": {
+                    "DistributionPriority": {
+                        "FileName": "random_priority",
+                        "ClassName": "RandomPriority",
+                        "Parameters": {
+                            "Seed": 42.0,
+                            "DemandType": [
+                                "RecoveryDemand"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "DemolitionCrew": {
+            "Group": "RecoveryResources",
+            "DistributionModel": {
+                "ClassName": "UtilityDistributionModel",
+                "FileName": "utility_distribution_model",
+                "Parameters": {
+                    "DistributionPriority": {
+                        "FileName": "random_priority",
+                        "ClassName": "RandomPriority",
+                        "Parameters": {
+                            "Seed": 42.0,
+                            "DemandType": [
+                                "RecoveryDemand"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "RepairCrew": {
+            "Group": "RecoveryResources",
+            "DistributionModel": {
+                "ClassName": "UtilityDistributionModel",
+                "FileName": "utility_distribution_model",
+                "Parameters": {
+                    "DistributionPriority": {
+                        "FileName": "random_priority",
+                        "ClassName": "RandomPriority",
+                        "Parameters": {
+                            "Seed": 42.0,
+                            "DemandType": [
+                                "RecoveryDemand"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "ResilienceCalculator": [
+        {
+            "ClassName": "ReCoDeSCalculator",
+            "FileName": "recodes_calculator",
+            "Parameters": {
+                "Scope": "All",
+                "Resources": [
+                    "Shelter",
+                    "FirstResponderEngineer",
+                    "RepairCrew",
+                    "Money"
+                ]
+            }
+        },
+        {
+            "ClassName": "NISTGoalsCalculator",
+            "FileName": "nist_goals_calculator",
+            "Parameters": [
+                {
+                    "Resource": "Shelter",
+                    "Scope": "All",
+                    "DesiredFunctionalityLevel": 0.95
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+Resilience Calculator
+=====================
+
+.. automodule:: pyrecodes.resilience_calculator
+   :members:

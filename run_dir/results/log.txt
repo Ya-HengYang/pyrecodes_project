@@ -1,0 +1,167 @@
+
+
+rWHALE workflow
+
+System Information:
+  local time zone: CDT
+  start time: 2025-03-25T01:51:55
+  python: 3.9.19 | packaged by conda-forge | (main, Mar 20 2024, 12:50:21) 
+[GCC 12.3.0]
+  numpy: 1.26.4
+  pandas: 2.2.3
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+01:51:55 Started running the workflow script
+         -----------------------------------------------------------------------
+01:51:55 Inputs provided:
+         workflow input file: /scratch/07059/jyzhao/tapis/13f3e5bb-a594-4a73-a74c-8c1f77618a3f-007/tmp.SimCenter55119955-ec9d-4757-9967-4eefc80edc64/inputRWHALE.json
+         application registry file: /work2/00477/tg457427/stampede3/SimCenterBackendApplications/v25.02.03/applications/Workflow/WorkflowApplications.json
+         run type: runningLocal
+         -----------------------------------------------------------------------
+01:51:55 Parsing application registry file
+         Loading the json file...
+           OK
+         Loading default values...
+           OK
+         Collecting application data...
+           OK
+         Successfully parsed application registry
+         -----------------------------------------------------------------------
+01:51:55 Parsing workflow input file
+         Loading the json file...
+           OK
+         The following units were specified: 
+           force: kips
+           length: inch
+           time: sec
+         The following output_types were requested: 
+           DM
+           DV
+           EDP
+         The following workflow defaults were overwritten:
+           driverFile: driver
+           edpFiles: ['EDP.json']
+           filenameDL: BIM.json
+           filenameEDP: EDP.json
+           filenameEVENT: EVENT.json
+           filenameSAM: SAM.json
+           filenameSIM: SIM.json
+           rvFiles: ['SAM.json', 'EVENT.json', 'SIM.json']
+           workflowInput: inputRWHALE.json
+           workflowOutput: EDP.json
+         Run dir : /scratch/07059/jyzhao/tapis/13f3e5bb-a594-4a73-a74c-8c1f77618a3f-007/tmp.SimCenter55119955-ec9d-4757-9967-4eefc80edc64/Results
+         Local applications dir : /work2/00477/tg457427/stampede3/SimCenterBackendApplications/v25.02.03
+         Remote applications dir : /work2/00477/tg457427/stampede3/SimCenterBackendApplications/v25.02.03
+         Reference dir : /scratch/07059/jyzhao/tapis/13f3e5bb-a594-4a73-a74c-8c1f77618a3f-007/tmp.SimCenter55119955-ec9d-4757-9967-4eefc80edc64/input_data
+         
+         Parsing the requested list of applications...
+         Found asset: Buildings 
+         Found asset: TransportationNetwork 
+         Found asset: WaterDistributionNetwork 
+         For Buildings in Assets
+           Registering application CSV_to_AIM 
+         For TransportationNetwork in Assets
+           Registering application GEOJSON_TO_ASSET 
+         For WaterDistributionNetwork in Assets
+           Registering application INP_FILE 
+         UserInputGM is a passive application (i.e., it does not invoke any calculation within the workflow.
+         For Buildings in RegionalMapping
+           Registering application NearestNeighborEvents 
+         For TransportationNetwork in RegionalMapping
+           Registering application NearestNeighborEvents 
+         For WaterDistributionNetwork in RegionalMapping
+           Registering application NearestNeighborEvents 
+         For WaterNetworkNodes in RegionalMapping
+           Registering application NearestNeighborEvents 
+         For WaterNetworkPipelines in RegionalMapping
+           Registering application NearestNeighborEvents 
+         For Buildings in Simulation
+           Registering application IMasEDP 
+         For TransportationNetwork in Simulation
+           Registering application IMasEDP 
+         For WaterDistributionNetwork in Simulation
+           Registering application IMasEDP 
+         For WaterNetworkNodes in Simulation
+           Registering application IMasEDP 
+         For WaterNetworkPipelines in Simulation
+           Registering application IMasEDP 
+         For Buildings in DL
+           Registering application Pelicun3 
+         For TransportationNetwork in DL
+           Registering application Pelicun3 
+         For WaterDistributionNetwork in DL
+           Registering application Pelicun3 
+         
+         Requested workflow:
+                Event : SimCenterEvent
+            Assets : 
+                Buildings : CSV_to_AIM
+            Assets : 
+                TransportationNetwork : GEOJSON_TO_ASSET
+            Assets : 
+                WaterDistributionNetwork : INP_FILE
+            RegionalMapping : 
+                Buildings : NearestNeighborEvents
+            RegionalMapping : 
+                TransportationNetwork : NearestNeighborEvents
+            RegionalMapping : 
+                WaterDistributionNetwork : NearestNeighborEvents
+            RegionalMapping : 
+                WaterNetworkNodes : NearestNeighborEvents
+            RegionalMapping : 
+                WaterNetworkPipelines : NearestNeighborEvents
+            Simulation : 
+                Buildings : IMasEDP
+            Simulation : 
+                TransportationNetwork : IMasEDP
+            Simulation : 
+                WaterDistributionNetwork : IMasEDP
+            Simulation : 
+                WaterNetworkNodes : IMasEDP
+            Simulation : 
+                WaterNetworkPipelines : IMasEDP
+            DL : 
+                Buildings : Pelicun3
+            DL : 
+                TransportationNetwork : Pelicun3
+            DL : 
+                WaterDistributionNetwork : Pelicun3
+         
+         Successfully parsed workflow inputs
+         -----------------------------------------------------------------------
+01:51:55 Initializing the working directory.
+         Working directory successfully initialized.
+         -----------------------------------------------------------------------
+01:51:55 Creating files for individual assets
+         
+         Writing Asset Info command for asset type: Buildings to script
+         
+         Writing Asset Info command for asset type: TransportationNetwork to script
+         
+         Writing Asset Info command for asset type: WaterDistributionNetwork to script
+         -----------------------------------------------------------------------
+01:51:55 Simulating regional event...
+         No Regional Event Application to run.
+         -----------------------------------------------------------------------
+
+01:51:55 Creating regional mapping...
+
+"/work2/00477/tg457427/stampede3/python_env/intel24python3.9-simcenter-25.02/bin/python3" "/work2/00477/tg457427/stampede3/SimCenterBackendApplications/v25.02.03/applications/performRegionalMapping/NearestNeighborEvents/NNE.py" "--assetFile" "/scratch/07059/jyzhao/tapis/13f3e5bb-a594-4a73-a74c-8c1f77618a3f-007/tmp.SimCenter55119955-ec9d-4757-9967-4eefc80edc64/Results/Buildings/Buildings1-14166.json" "--filenameEVENTgrid" "/scratch/07059/jyzhao/tapis/13f3e5bb-a594-4a73-a74c-8c1f77618a3f-007/tmp.SimCenter55119955-ec9d-4757-9967-4eefc80edc64/input_data/EventGrid.csv" "--neighbors" "4" "--samples" "100" "--seed" "10" 
+
+         Regional mapping command added to parallel script.
+         -----------------------------------------------------------------------
+
+01:51:55 Creating regional mapping...
+
+"/work2/00477/tg457427/stampede3/python_env/intel24python3.9-simcenter-25.02/bin/python3" "/work2/00477/tg457427/stampede3/SimCenterBackendApplications/v25.02.03/applications/performRegionalMapping/NearestNeighborEvents/NNE.py" "--assetFile" "/scratch/07059/jyzhao/tapis/13f3e5bb-a594-4a73-a74c-8c1f77618a3f-007/tmp.SimCenter55119955-ec9d-4757-9967-4eefc80edc64/Results/TransportationNetwork/TransportationNetwork.json" "--filenameEVENTgrid" "/scratch/07059/jyzhao/tapis/13f3e5bb-a594-4a73-a74c-8c1f77618a3f-007/tmp.SimCenter55119955-ec9d-4757-9967-4eefc80edc64/input_data/EventGrid.csv" "--neighbors" "4" "--samples" "100" "--seed" "10" 
+
+         Regional mapping command added to parallel script.
+         -----------------------------------------------------------------------
+
+01:51:56 Creating regional mapping...
+
+"/work2/00477/tg457427/stampede3/python_env/intel24python3.9-simcenter-25.02/bin/python3" "/work2/00477/tg457427/stampede3/SimCenterBackendApplications/v25.02.03/applications/performRegionalMapping/NearestNeighborEvents/NNE.py" "--assetFile" "/scratch/07059/jyzhao/tapis/13f3e5bb-a594-4a73-a74c-8c1f77618a3f-007/tmp.SimCenter55119955-ec9d-4757-9967-4eefc80edc64/Results/WaterDistributionNetwork/WaterDistributionNetwork.json" "--filenameEVENTgrid" "/scratch/07059/jyzhao/tapis/13f3e5bb-a594-4a73-a74c-8c1f77618a3f-007/tmp.SimCenter55119955-ec9d-4757-9967-4eefc80edc64/input_data/EventGrid.csv" "--neighbors" "4" "--samples" "100" "--seed" "10" 
+
+         Regional mapping command added to parallel script.
+         -----------------------------------------------------------------------

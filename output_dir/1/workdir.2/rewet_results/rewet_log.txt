@@ -1,0 +1,275 @@
+No Pipe damages at all
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+here was 1amended
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+No Pipe damages at all
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+No Pipe damages at all
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+No Pipe damages at all
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+No Pipe damages at all
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+No Pipe damages at all
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+No Pipe damages at all
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+No Pipe damages at all
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .
+No Pipe damages at all
+no node damage at all
+No pump damage at all
+No Tank Damage at all
+(1, 10, 0)
+Error (Warning) code is: 0
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN_.res
+Saving: /cluster/home/yayang1/run_pyrecodes/output_dir/1/workdir.2/rewet_results/SCN__registry.pkl
+loading scenario SCN_
+Removing invalid data.
+.... removed: .

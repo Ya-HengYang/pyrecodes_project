@@ -1,0 +1,3 @@
+simcenter_add_python_script(SCRIPT pelicun3_wrapper.py)
+simcenter_add_python_script(SCRIPT HDF_to_CSV.py)
+simcenter_add_python_script(SCRIPT DL_visuals.py)

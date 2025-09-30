@@ -1,0 +1,79 @@
+{
+    "crs": {
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        },
+        "type": "name"
+    },
+    "features": [
+        {
+            "geometry": {
+                "coordinates": [
+                    -122.27816972999995,
+                    37.78807774000006
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "AIM_id": "0",
+                "ConstructType": "unclassified",
+                "R2Dres_MostLikelyCriticalDamageState": 2,
+                "R2Dres_mean_RepairCost_loss_ratio": 0.5329999999999999,
+                "R2Dres_mean_RepairTime_day": 74.01,
+                "R2Dres_std_RepairCost_loss_ratio": 0.39531473204743756,
+                "R2Dres_std_RepairTime_day": 141.70601913322474,
+                "ReplacementCost": 145156440.85239998,
+                "RoadID": "3627,3628",
+                "SoilType": "B",
+                "TunnelHazusClass": "HTU2",
+                "TunnelLength": 131496.1,
+                "TunnelLength_ft": 10958.008333333335,
+                "TunnelName": "Webster Street Tube (SR 260 SB)",
+                "TunnelNumber": "33 0106L",
+                "assetSubtype": "HwyTunnel",
+                "assetType": "TransportationNetwork",
+                "location": {
+                    "latitude": 37.78807774000006,
+                    "longitude": -122.27816972999995
+                },
+                "type": "Tunnel"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -122.27657403999996,
+                    37.787440350000054
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "AIM_id": "1",
+                "ConstructType": "unclassified",
+                "R2Dres_MostLikelyCriticalDamageState": 2,
+                "R2Dres_mean_RepairCost_loss_ratio": 0.5784999999999999,
+                "R2Dres_mean_RepairTime_day": 88.67,
+                "R2Dres_std_RepairCost_loss_ratio": 0.38868172692896796,
+                "R2Dres_std_RepairTime_day": 151.83996459590227,
+                "ReplacementCost": 154065667.83959997,
+                "RoadID": "3736,3737",
+                "SoilType": "B",
+                "TunnelHazusClass": "HTU2",
+                "TunnelLength": 139566.9,
+                "TunnelLength_ft": 11630.575,
+                "TunnelName": "Posey Tube (SR 260 NB)",
+                "TunnelNumber": "33 0106R",
+                "assetSubtype": "HwyTunnel",
+                "assetType": "TransportationNetwork",
+                "location": {
+                    "latitude": 37.787440350000054,
+                    "longitude": -122.27657403999996
+                },
+                "type": "Tunnel"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}
