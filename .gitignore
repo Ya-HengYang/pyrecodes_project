@@ -42,7 +42,7 @@ slurm-*.err
 # Simulation outputs
 output_dir/
 SimCenterBackendApplications/
-run_dir/
+# run_dir/
 
 # Scratch directory
 /cluster/scratch/

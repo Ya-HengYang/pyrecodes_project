@@ -18,9 +18,11 @@ def run_pyrecodes(  # noqa: C901
         main_file,
         system_config_dir,
         system_config_basefile,
-        component_library,
+        component_library_dir,
+        component_library_basefile,
         r2d_run_dir,
         input_data_dir,
+        environment_shell_script,
         output_dir,
         realization,
         save_pickle_file,
@@ -61,14 +63,31 @@ def run_pyrecodes(  # noqa: C901
     numP = comm.Get_size()  # noqa: N806
     procID = comm.Get_rank()  # noqa: N806
     
-    # List all samples in system config directory
-    system_config_path_samples = glob.glob(os.path.join(system_config_dir, f"{system_config_basefile}*.json"))
-    system_config_filename_samples = [os.path.basename(x) for x in system_config_path_samples]
-    sample_id_list = [int(x.split(".")[0].split("_")[-1]) for x in system_config_filename_samples]
+    # At least one of the system configuration dir or component library dir must be provided
+    if system_config_dir == str(input_data_dir) and component_library_dir == str(input_data_dir):
+        raise RuntimeError("At least one of the system configuration dir or component library dir must be provided and different from input data dir.")
+
+    if component_library_dir != str(input_data_dir):
+        component_library_path_samples = glob.glob(os.path.join(component_library_dir, f"{component_library_basefile}*.json"))
+        component_library_filename_samples = [os.path.basename(x) for x in component_library_path_samples]
+        sample_id_list_cl = [int(x.split(".")[0].split("_")[-1]) for x in component_library_filename_samples]
+
+    if system_config_dir != str(input_data_dir):
+        system_config_path_samples = glob.glob(os.path.join(system_config_dir, f"{system_config_basefile}*.json"))
+        system_config_filename_samples = [os.path.basename(x) for x in system_config_path_samples]
+        sample_id_list_sc = [int(x.split(".")[0].split("_")[-1]) for x in system_config_filename_samples]
+
+    if component_library_dir != str(input_data_dir) and system_config_dir != str(input_data_dir):
+        if set(sample_id_list_cl) != set(sample_id_list_sc):
+            raise RuntimeError("The sample ids in the system configuration dir and component library dir do not match.")
+        sample_id_list = sample_id_list_cl
+    elif component_library_dir != str(input_data_dir):
+        sample_id_list = sample_id_list_cl
+    elif system_config_dir != str(input_data_dir):
+        sample_id_list = sample_id_list_sc
+
     output_dir = Path(output_dir)
-    
     temp_dir = output_dir / "temp"   # yyh
-    temp_dir.mkdir(parents=True, exist_ok=True) # yyh
 
     if procID == 0:    
         if output_dir.exists():
@@ -99,6 +118,8 @@ def run_pyrecodes(  # noqa: C901
             with Path(rlz).open('w') as f:
                 json.dump(results_rlz, f)
 
+        temp_dir.mkdir(parents=True, exist_ok=True) # yyh
+
     comm.Barrier()
 
     for i, sample_id in tqdm(enumerate(sample_id_list)):
@@ -106,7 +127,14 @@ def run_pyrecodes(  # noqa: C901
             output_dir_i = output_dir / str(sample_id)
             os.mkdir(output_dir_i)
 
-            system_config_path = os.path.join(system_config_dir, f"{system_config_basefile}_{sample_id}.json")
+            if system_config_dir == str(input_data_dir):
+                system_config_path = os.path.join(input_data_dir, f"{system_config_basefile}.json")
+            else:
+                system_config_path = os.path.join(system_config_dir, f"{system_config_basefile}_{sample_id}.json")
+            if component_library_dir == str(input_data_dir):
+                component_library = os.path.join(input_data_dir, f"{component_library_basefile}.json")
+            else:
+                component_library = os.path.join(component_library_dir, f"{component_library_basefile}_{sample_id}.json")
 
             command = f"{python_path} {calculation_single_process_file}"
             command += f" --mainFile {main_file}"
@@ -123,7 +151,7 @@ def run_pyrecodes(  # noqa: C901
             sh_file_path = str(temp_dir / f"sh_file_{sample_id}.sh")  #yyh
             with open(sh_file_path, 'w') as sh_file:
                 sh_file.write("#!/bin/bash\n")
-                sh_file.write(str("source"/ THIS_DIR / "activate_env.sh\n"))        
+                sh_file.write(f"source {environment_shell_script}\n")
                 sh_file.write(f"{command}\n")
                 # sh_file.write(f'''exec >"/work2/07059/jyzhao/stampede3/run_pyrecodes/temp/sh_file_{sample_id}.out" 2>&1''')
                 
@@ -164,7 +192,11 @@ if __name__ == '__main__':
     )
 
     workflowArgParser.add_argument(
-        '--ComponentLibraryFile', help='Pyrecodes component library file', required=True
+        '--ComponentLibraryDir', help='Director containing component library files', required=True
+    )
+
+    workflowArgParser.add_argument(
+        '--ComponentLibraryBasename', help='Basename of component library files', required=True
     )
 
     workflowArgParser.add_argument(
@@ -192,6 +224,12 @@ if __name__ == '__main__':
     )
 
     workflowArgParser.add_argument(
+        '--environmentShellScript',
+        required=True,
+        help='The path to the shell script to set up the environment'
+    )
+
+    workflowArgParser.add_argument(
         '--mpiexec',
         default='ibrun',
         help='How mpi runs, e.g. ibrun, mpirun, mpiexec',
@@ -210,9 +248,11 @@ if __name__ == '__main__':
         main_file=wfArgs.mainFile,
         system_config_dir=wfArgs.SystemConfigurationDir,
         system_config_basefile=wfArgs.SystemConfigurationBasename,
-        component_library=wfArgs.ComponentLibraryFile,
+        component_library_dir=wfArgs.ComponentLibraryDir,
+        component_library_basefile=wfArgs.ComponentLibraryBasename,
         r2d_run_dir=wfArgs.r2dRunDir,
         input_data_dir=wfArgs.inputDataDir,
+        environment_shell_script=wfArgs.environmentShellScript,
         output_dir=wfArgs.outputDir,
         realization=None,
         save_pickle_file=wfArgs.savePickleFile
