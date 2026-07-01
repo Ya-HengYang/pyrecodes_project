@@ -1,3 +1,0 @@
-SLURM_CPUS_PER_TASK=16
-slurmstepd: error: execve(): /cluster/home/yayang1/run_pyrecodes/sh_file_1.sh: Permission denied
-srun: error: eu-g5-043-3: task 0: Exited with exit code 13
