@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=pyrecodes_parallel
-#SBATCH --partition=normal.4h
-#SBATCH --nodes=1
-#SBATCH --ntasks=2
+#SBATCH --partition=normal.24h
+#SBATCH --nodes=2
+#SBATCH --ntasks=8
+#SBATCH --ntasks-per-node=4
 #SBATCH --cpus-per-task=32
-#SBATCH --time=04:00:00
+#SBATCH --time=24:00:00
 #SBATCH --output=%x_%j.out
 
 set -euo pipefail
@@ -26,6 +27,7 @@ mkdir -p "$SCR_INPUT" "$SCR_RESULTS" "$SCR_OUTPUT"
 HOME_OUTPUT_BASE="$HOME_PROJ/output_dir"
 HOME_OUTPUT="$HOME_OUTPUT_BASE/$JOB_TAG"
 mkdir -p "$HOME_OUTPUT_BASE" 
+
 
 # 
 source "$HOME_PROJ/activate_env.sh"
@@ -51,7 +53,8 @@ srun python "$HOME_PROJ/run_pyrecodes_parallel.py" \
   --r2dRunDir "$SCR_RESULTS" \
   --inputDataDir "$SCR_INPUT" \
   --environmentShellScript "$HOME_PROJ/activate_env.sh" \
-  --outputDir "$SCR_OUTPUT"
+  --outputDir "$SCR_OUTPUT" \
+  --savePickleFile True
 
 #
 echo "[JOB] syncing results ? $HOME_OUTPUT"
